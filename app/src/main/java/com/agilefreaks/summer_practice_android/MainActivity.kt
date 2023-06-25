@@ -8,6 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.agilefreaks.summer_practice_android.components.mobile.MobileFreaksApp
+import com.agilefreaks.summer_practice_android.components.tv.TvFreaksApp
 import com.agilefreaks.summer_practice_android.ui.theme.SummerPracticeAndroidTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MobileFreaksApp()
+                    TvFreaksApp()
                 }
             }
         }

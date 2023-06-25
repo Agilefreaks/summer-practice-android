@@ -36,19 +36,19 @@ fun MobileFreaksApp() {
         },
         bottomBar = {
             NavigationBar {
-                NavigationItem(
+                BottomNavigationItem(
                     title = NavItem.Home.title,
                     iconRes = NavItem.Home.iconRes,
                     selected = currentBackStackEntry?.destination?.route == NavItem.Home.screen_route,
                     onClick = { navController.navigate(NavItem.Home.screen_route) }
                 )
-                NavigationItem(
+                BottomNavigationItem(
                     title = NavItem.Freaks.title,
                     iconRes = NavItem.Freaks.iconRes,
                     selected = currentBackStackEntry?.destination?.route == NavItem.Freaks.screen_route,
                     onClick = { navController.navigate(NavItem.Freaks.screen_route) }
                 )
-                NavigationItem(
+                BottomNavigationItem(
                     title = NavItem.Profile.title,
                     iconRes = NavItem.Profile.iconRes,
                     selected = currentBackStackEntry?.destination?.route == NavItem.Profile.screen_route,

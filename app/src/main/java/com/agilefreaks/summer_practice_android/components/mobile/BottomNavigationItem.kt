@@ -21,7 +21,7 @@ import com.agilefreaks.summer_practice_android.ui.theme.Grey70
 import com.agilefreaks.summer_practice_android.ui.theme.SummerPracticeAndroidTheme
 
 @Composable
-fun RowScope.NavigationItem(
+fun RowScope.BottomNavigationItem(
     title: String,
     @DrawableRes iconRes: Int,
     selected: Boolean,
@@ -50,7 +50,7 @@ fun RowScope.NavigationItem(
 fun NavigationItemPreview() {
     SummerPracticeAndroidTheme {
         Row(Modifier.height(80.dp)) {
-            NavigationItem(
+            BottomNavigationItem(
                 title = "Home",
                 iconRes = R.drawable.home,
                 selected = true,
