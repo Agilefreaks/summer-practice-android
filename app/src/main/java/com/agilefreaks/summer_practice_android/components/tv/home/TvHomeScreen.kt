@@ -16,16 +16,5 @@ import androidx.tv.material3.ExperimentalTvMaterial3Api
 fun TvHomeScreen(
     menuItemFocusRequester: FocusRequester
 ) {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Button(onClick = { /*TODO*/ },
-        modifier = Modifier.focusProperties {
-            left = menuItemFocusRequester
-        }
-            ) {
-            Text(text = "Home")
-        }
-    }
+    // TODO
 }
